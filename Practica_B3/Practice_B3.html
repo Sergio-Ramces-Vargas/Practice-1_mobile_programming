@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <title>Practice B3</title>
+</head>
+<header>
+  <!--Navbar 1 (Logo y otras cositas)-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-white px-5 p-4">
+    <img src="img/Marca.png" class="navbar-toggler mx-auto" alt="Toggle Navigation" 
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" height="60px">
+    
+             <div class="navbar-toggler mx-auto" alt="Toggle Navigation" 
+             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" height="50px">
+              <a class="btn btn-danger mr-2" href="#">Suscríbete</a>
+              <a class="btn btn-light text-danger border-danger" href="#"><strong>Iniciar sesión</strong></a>
+          </div>
+      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Lista de navegación alineada a la izquierda -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active d-flex align-items-center">
+                <img src="https://e00-marca.uecdn.es/imagenes/2024/09/08/portada/marca_papel/1725746880_extras_primera_papel_0.jpg" style="height: 40px;">
+                <a class="nav-link text-dark text-small" href="#"><strong>La portada de hoy</strong><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active d-flex align-items-center">
+                <img src="/Practica_B3/img/logos/RadioMarca.png" class="" style="height: 40px;">
+                <a class="nav-link text-dark text text-small" href="#"><strong>Radio Marca</strong><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active d-flex align-items-center">
+                <img src="/Practica_B3/img/logos/LaLiga.png" class="" style="height: 40px; border-radius: 50%;">
+                <a class="nav-link text-dark text-small" href="#"><strong>La liga Marca</strong><span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <!-- Lista de navegación centrada -->
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active d-flex align-items-center mx-4">
+                <img src="img/Marca.png" style="height: 50px;">
+            </li>
+        </ul>
+
+        <!-- Lista de navegación alineada a la derecha -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="btn btn-light nav-link dropdown-toggle text-dark mr-2 border-danger" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="/Practica_B3/img/logos/España.png" style="height: 20px" alt="España">
+                  ES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <h6 class="dropdown-header">Ediciones</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-dark" href="#">
+                    <img src="/Practica_B3/img/logos/world.jpeg" style="height: 20px;" alt="Mundo">
+                    EN (English)
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-dark" href="#">
+                    <img src="/Practica_B3/img/logos/mexico.jpeg" style="height: 20px;" alt="México">
+                    MX (México)</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-dark" href="#">
+                    <img src="/Practica_B3/img/logos/USA.jpeg" style="height: 20px;" alt="USA">
+                    US (USA)</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+                <a class="btn btn-danger mr-2" href="#">Suscríbete</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-light text-danger border-danger" href="#"><strong>Iniciar sesion</strong></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+  <!--Navbar 2 (Con las opciones y la busqueda)-->
+  <nav class="navbar navbar-expand-lg navbar-light h4" style="background-color: #c00;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNumberTwo" aria-controls="navbarNumberTwo" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNumberTwo">
+      <ul class="navbar-nav mx-auto">
+        <!--Futbol-->
+        <li class="nav-item dropdown ml-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Futbol
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-danger" href="#">LA LIGA EA Sports</a>
+            <a class="dropdown-item text-danger" href="#">Premier League</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#">Champions League</a>
+          </div>
+        </li>
+        <!--Baloncesto-->
+        <li class="nav-item dropdown ml-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Baloncesto
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-danger" href="#">Liga Endesa</a>
+            <a class="dropdown-item text-danger" href="#">Euroliga</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#">NBA</a>
+          </div>
+        </li>
+        <!--Motor-->
+        <li class="nav-item dropdown ml-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Motor
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-danger" href="#">Formula 1</a>
+            <a class="dropdown-item text-danger" href="#">Rallies</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#">Moto GP</a>
+          </div>
+        </li>
+        <!--Polideportivo-->
+        <li class="nav-item dropdown ml-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Polideportivo
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-danger" href="#">Atletismo</a>
+            <a class="dropdown-item text-danger" href="#">Ajedrez</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#">MMA</a>
+          </div>
+        </li>
+          <!--Coches-->
+        <li class="nav-item dropdown ml-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Coches
+          </a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-danger" href="#">Coches y motos</a>
+            <a class="dropdown-item text-danger" href="#">Salones del Automovil</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-danger" href="#">Y demás</a>
+          </div>
+        </li>
+        <!--Botón Más-->
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            MAS+
+          </a>
+          <div class="dropdown-menu bg-secondary">
+            <a class="dropdown-item text-dark" href="#">Actualidad</a>
+            <a class="dropdown-item text-dark" href="#">Especiales</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-dark" href="#">Gaming</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Navbar 3 (Con las opciones y la busqueda)-->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <!-- Botón para resoluciones pequeñas -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseExample" aria-controls="navbarCollapseExample" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido colapsable del menú -->
+    <div class="collapse navbar-collapse" id="navbarCollapseExample">
+        <ul class="navbar-nav d-flex flex-wrap justify-content-start mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Alaves.png" alt="Equipo 1" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Athletic_Club.png" alt="Equipo 2" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Atletico_Madrid.png" alt="Equipo 3" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Barcelona.png" alt="Equipo 4" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Betis.png" alt="Equipo 5" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Celta_de_Vigo.png" alt="Equipo 6" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Espanyol.png" alt="Equipo 7" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Getafe.png" alt="Equipo 8" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Girona.png" alt="Equipo 9" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Las_Palmas.png" alt="Equipo 10" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Leganes.png" alt="Equipo 11" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Mallorca.png" alt="Equipo 12" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Osasuna.png" alt="Equipo 13" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Rayo_Vallecano.png" alt="Equipo 14" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Real_madrid.png" alt="Equipo 15" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Real_Sociedad.png" alt="Equipo 16" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Sevilla.png" alt="Equipo 17" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Valencia.png" alt="Equipo 18" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Valladolid.png" alt="Equipo 19" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="img/Equipos/Villarreal.png" alt="Equipo 20" class="img-fluid" style="max-height: 30px;">
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<body>
+  <!--Anuncio-->
+  <div class="container mb-5" style="height: 150px; max-width: 600px;">
+    <div class="row">
+      <div class="col-12">
+        <a href="#"> <img src="../imagenes/lol.gif" alt="Anuncio" class="img-fluid"></a>
+      </div>
+    </div>
+  </div>
+
+  <!--Contenedor con las noticias-->
+  <div class="container">
+    <div class="row">
+      <!--Noticia principal (La mas grande)-->
+      <div class="col-md-7 col-12 mx-auto">
+        <div class="card mb-3">
+          <a href="#"><img src="/Practica_B3/img/Noticias/noticia 1.webp" class="card-img-top" alt="Noticia principal"></a>
+          <div class="card-body">
+            <h2 class="card-title"><a href="#" class="text-dark">Brasil se hunde en Asunción y todo se ve complicado</a></h2>
+            <p class="card-text"><small class="text-muted">Juan Oseguera</small></p>
+          </div>
+        </div>
+      </div>
+      <!--Lista de noticias (lado derecho)-->
+      <div class="col-md-5 col-12 mx-auto">
+        <div class="container">
+          <!--Tarjeta 1-->
+          <div class="card mb-3" style="max-width: 440px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href="#"><img src="/Practica_B3/img/Noticias/noticia 2.webp" class="img-fluid p-3 p-2" alt="Noticia 2"></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="#" class="text-dark">La situación Para México dentro del futbol nacional es preocupante</a></h5>
+                  <p class="card-text"><small class="text-muted">Jose Martín</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <!--Tarjeta 2-->
+          <div class="card mb-3" style="max-width: 440px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href=""><img src="/Practica_B3/img/Noticias/noticia 3.webp" class="img-fluid pr-3 p-2" alt="Noticia 3"></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="#" class="text-dark">Director tecnico critica fuertemente a la selección</a></h5>
+                  <p class="card-text"><small class="text-muted">Luis Walle</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <!--Tarjeta 3-->
+          <div class="card mb-3" style="max-width: 420px;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <a href=""><img src="/Practica_B3/img/Noticias/noticia 4.webp" class="img-fluid pr-3 p-2" alt="Noticia 4"></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="#" class="text-dark">La selección nacional no puede contra Canadá</a></h5>
+                  <p class="card-text"><small class="text-muted">Javier Ibarreche</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-4">
+  <!--Tarjetas con noticias-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card-deck">
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 5.jpg" class="card-img-top" alt="Noticia 5"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">Se registra lesión fuerte dentro de la cancha</a></h5>
+              <p class="card-text">En un partido de futbol se registró una lesión muy fuerte</p>
+              <p class="card-text"><small class="text-muted">Txus Moises</small></p>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 6.webp" class="card-img-top" alt="Noticia 6"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">Portero saluda a su familia desde la cancha</a></h5>
+              <p class="card-text">La familia del arquero estuvo presente para darle animo y el los saludó</p>
+              <p class="card-text"><small class="text-muted">Juan Manuel</small></p>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 4.webp" class="card-img-top" alt="Noticia 4"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">Directores y selección molestos ante sus resultados en la liga</a></h5>
+              <p class="card-text">Todos en la liga estan molestos por sus resultados</p>
+              <p class="card-text"><small class="text-muted">Miguel y Dalgo</small></p>
+              <hr class="hr-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Nav que hay con sección "Es noticia"-->
+  <div class="container">
+    <hr class="my-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Es noticia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#zonaEsNoticia" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="zonaEsNoticia">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Mercado de fichajes</a>
+          <a class="nav-link" href="#">Rodrigo</a>
+          <a class="nav-link" href="#">Fernando Alonso</a>
+          <a class="nav-link" href="#">Lewandowski</a>
+          <a class="nav-link" href="#">Usain Bolt</a>
+          <a class="nav-link" href="#">Donald Trump</a>
+          <a class="nav-link" href="#">Calendario Liga</a>
+        </div>
+      </div>
+    </nav>
+    <hr class="my-4">
+  </div>
+  <!--SECCIÓN DE TARJETAS CHICAS-->
+  <div class="container">
+    <div class="row">
+      <!--Tarjeta 1-->
+      <div class="col-sm-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <a href="#"><img src="/Practica_B3/img/Noticias/noticia 6.webp" class="img-fluid pr-3 p-2" alt="Noticia 6"></a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-dark">Portero Saluda a su familia en el juego</a></h5>
+                <p class="card-text"><small class="text-muted">Juan Manuel</small></p>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Tarjeta 2-->
+      <div class="col-sm-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <a href="#"><img src="/Practica_B3/img/Noticias/noticia 5.jpg" class="img-fluid pr-3 p-2" alt="Noticia 5"></a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-dark">Fuerte lesión en el campo de juego</a></h5>
+                <p class="card-text"><small class="text-muted">Txus Moises</small></p>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--tarjeta 3-->
+      <div class="col-sm-4">
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <a href="#"><img src="/Practica_B3/img/Noticias/noticia 4.webp" class="img-fluid pr-3 p-2" alt="Noticia 4"></a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="#" class="text-dark">Todos molestos ante resultados de la liga</a></h5>
+                <p class="card-text"><small class="text-muted">Miguel y Dalgo</small></p>
+                <hr class="my-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Tarjetas grandes-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card-deck">
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 3.webp" class="card-img-top" alt="Noticia 3"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">Director tecnico critica fuertemente a la selección</a></h5>
+              <p class="card-text">Un director tecnico desconocido a criticado el rendimiento de la selección mexicana</p>
+              <p class="card-text"><small class="text-muted">Luis Walle</small></p>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 2.webp" class="card-img-top" alt="Noticia 2"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">situación alarmante para la selección mexicana</a></h5>
+              <p class="card-text">La selección mexicana está en aprietos tras sus resultados en la liga</p>
+              <p class="card-text"><small class="text-muted">Jose Martín</small></p>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"><img src="/Practica_B3/img/Noticias/noticia 1.webp" class="card-img-top" alt="Noticia 1"></a>
+            <div class="card-body">
+              <h5 class="card-title"><a href="#" class="text-dark">Brasil es derrotada en Asunción y todo se complica</a></h5>
+              <p class="card-text">Tras la derrota de Brasil en Asunción todo empieza a ponerse dificil</p>
+              <p class="card-text"><small class="text-muted">Juan Oseguera</small></p>
+              <hr class="hr-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+      <!-- Título del footer -->
+      <div class="text-center mb-3">
+          <h4>Otras webs de unidad editorial</h4>
+      </div>
+      <!-- Línea separadora -->
+      <div class="border-bottom border-light mb-4"></div>
+      <!-- Contenido del footer -->
+      <div class="row">
+          <div class="col-md-3 col-sm-6">
+              <h5>Marca</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident similique illo dolore saepe minus corrupti quo et quidem. Ex, vero porro. Atque aspernatur dignissimos iusto explicabo sequi fugit voluptas.</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h5>Ocio y moda</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptatem minus, laborum sed natus libero hic mollitia quaerat iure recusandae neque nihil? Officiis blanditiis dicta architecto possimus perferendis aliquam aut!</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h5>Unidad editorial</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestias perspiciatis ullam maxime voluptate! Vero optio aliquam sunt, quos quisquam voluptates quibusdam nobis sapiente suscipit eligendi aspernatur, temporibus beatae eos!.</p>
+          </div>
+          <div class="col-md-3 col-sm-6">
+              <h5>Formacion y empleo</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa vel voluptas iure? Facilis, similique! Doloremque pariatur voluptate blanditiis impedit soluta obcaecati ullam, sed debitis magnam ea eum quod rem ducimus.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center my-3">
+            <p class="mb-0"><strong>© Septiembre 2024 Unidad Editorial Informacion Deportiva, S.L.U. Todos los derechos reservados</strong></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Términos y condiciones de uso</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Política de privacidad</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Política de cookies</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Certificado por OJD</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Contacto</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Publicidad</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Ayuda</a></p>
+        </div>
+        <div class="col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Nuestro equipo</a></p>
+        </div>
+        <div class="div class=col-12 col-md-3 col-lg-2 text-center">
+            <p><a href="#" class="text-dark text-decoration-none">Venta de contenidos</a></p>
+        </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <p class="mb-1">Síguenos en:</p>
+            <div class="d-inline-block">
+                <a href="#" class="mx-2 text-dark" aria-label="Facebook">
+                    <img src="/Practica_B3/img/logos/Facebook.png" style="max-height: 30px;" alt="Facebook">
+                </a>
+                <a href="#" class="mx-2 text-dark" aria-label="X">
+                    <img src="/Practica_B3/img/logos/X.jpeg" style="max-height: 30px;" alt="ecs">
+                </a>
+                <a href="#" class="mx-2 text-dark" aria-label="Instagram">
+                    <img src="/Practica_B3/img/logos/Instagram.png" style="max-height: 30px;" alt="Instagram">
+                </a>
+                <a href="#" class="mx-2 text-dark" aria-label="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
